@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+hello
+<div id="demo">
+    <button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+<script src="JavaScript.js"></script>
+<script>
+    console.log("hh");
+   var Person = function(age,name,year){
+       this.age = age;
+       this.name = name;
+       this.year = year;
+   }
+
+   Person.prototype.calAge = function () {
+       console.log(1880-year);
+
+   }
+   Person.prototype.lastName = "kallu";
+   var john = new Person(12,"kirn",1990);
+   console.log(john);
+   var lo = new Person(32,"har",9900);
+   console.log(john.lastName);
+
+
+    function loadXMLDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", "text.txt", true);
+        xhttp.send();
+    }
+function interview(job){
+        if(job==="teacher"){
+            return function (name){
+                console.log(name + "is a tecaher")}
+            }
+        else(job==="designer")
+    {
+        return function (name) {
+            consoel.log(name + "is a designer")
+        }
+    }
+            }
+
+
+interview('teacher')('john');
+ var chintu = {
+     name:'chintu',
+     age:22,
+     yearOfBirth : function(age){
+         console.log(1990-age);
+     }
+ }
+var lol = {
+     name :'lol',
+    age : 22,
+
+}
+chintu.yearOfBirth.call('lol',24);
+chintu.yearOfBirth(30);
+
+    function Question(question, answers, correctanswer){
+        this.question = question;
+        this.answer = answers;
+        this.oorrectanswer = correctanswer;
+    }
+    Question.prototype.displayQuestion =
+        function () {
+            console.log(this.question);
+            for(var i; i<this.answer.length;i++){
+                console.log(i+"this.anseer[i]");
+            }
+        }
+
+    var q1 = new Question("js is a fun language", [yes,no],0);
+    var q2 = new Question("js is what language", [wrost,fun,coding],1);
+    var q3 = new Question("js is java language", [yes,no],1);
+
+    var questions = [q1,q2,q3];
+
+    var random = math.floor(math.random()*question.length);
+    questions[random].displayQuestion();
+
+
+
+</script>
+</body>
+</html>

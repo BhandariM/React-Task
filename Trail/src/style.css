@@ -1,0 +1,48 @@
+/*.form-control{
+    width:100%;
+}
+
+.display{
+    float: right;
+    width: 250px;
+    height: 100px;
+    margin-top: 5%;
+}
+.navbar{
+    position:fixed
+}
+#img2{
+    border-top: 20%;
+    boder-left: 80%
+}
+
+/*.col-lg-6{
+    float: left;
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+}
+
+.p{
+    text-align:right;
+}
+
+}
+th, td {
+    padding: 15px;
+}
+tr{
+    padding: 100%;
+}
+*/
+table, th, td {
+    border: 1px solid black;
+}
+
+body{
+    background-image: url("C:\Users\Minnu\Desktop\WalnutProjectPix\Registration2.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+}
+
